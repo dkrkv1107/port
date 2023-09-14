@@ -26,6 +26,13 @@ html{
     background: #555;
 }
 
+.normal-para-color{
+    color: #222222;
+    font-size: 16px;
+    font-family: 'Poppins';
+    font-weight: 100;
+}
+
 /* all similar content styling codes */
 section{
     padding: 100px 0;
@@ -237,6 +244,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 .about .about-content .right .text span{
     color: crimson;
@@ -259,6 +267,14 @@ section .title::after{
 .about .about-content .right a:hover{
     color: crimson;
     background: none;
+}
+
+.paratext{
+    color: #ffffff;
+}
+
+.paratext:hover{
+    color: #222222;
 }
 
 /* services section styling */
@@ -305,6 +321,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #ffffff;
 }
 
 /* skills section styling */
@@ -319,6 +336,8 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #ffffff;
+
 }
 .skills .skills-content .left p{
     text-align: justify;
@@ -334,6 +353,7 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 .skills .skills-content .left a:hover{
     color: crimson;
@@ -456,6 +476,7 @@ section .title::after{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #ffffff;
 }
 .contact .contact-content .left p{
     text-align: justify;
@@ -469,7 +490,8 @@ section .title::after{
     align-items: center;
 }
 .contact .contact-content .row .info{
-    margin-left: 30px;
+    margin-left: 35px;
+    margin-top: -3.25rem;
 }
 .contact .contact-content .row i{
     font-size: 25px;
@@ -662,6 +684,8 @@ footer span a:hover{
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 19px;
+        color: #ffffff;
+
     }
     .contact .right form .fields{
         flex-direction: column;
@@ -695,4 +719,24 @@ padding-right: 10px;
     padding-top: 5px;
     padding-left: 5px;
     padding-bottom: 5px
+}
+
+#home {
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    height: 20px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+@media screen and (max-width: 1024px) {
+    #home {
+        position: relative;
+        color: #222222;
+        background-color: antiquewhite;
+    }
+}
+.dropdown{
+    margin-top: 20px ;
 }
